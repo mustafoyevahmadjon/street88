@@ -1,0 +1,300 @@
+:root{
+    --c-green: #69cf17d6;/*  header a */
+    --c-white: #ffffff;/*   */
+    --c-bggreen: #62be19;/*  header logo border */
+    --dark: #060002 ; /* body  */
+    --c-white2: #dedede; /* header p  */
+    --c-green2: #4e9f0d;/*  header logo */
+    --c-gray: #7a7a7a;/*  main a */ 
+    --c-gren-main: #69cf17;
+    --hover: #69cf17db;
+    --white: #ffffff;
+    --ff: 'Raleway' , sans-serif;
+    --ff-roboto: 'Roboto' , sans-serif;
+    --ff-t: "Tahoma" , sans-serif;
+    --thin: 100;
+    --light: 300;
+    --regular: 400;
+    --bold: 700;
+    --black: 900;
+    --col-1: calc(100% / 12 * 1);
+    --col-2: calc(100% / 12 * 2);
+    --col-3: calc(100% / 12 * 3);
+    --col-4: calc(100% / 12 * 4);
+    --col-5: calc(100% / 12 * 5);
+    --col-6: calc(100% / 12 * 6);
+    --col-7: calc(100% / 12 * 7);
+    --col-8: calc(100% / 12 * 8);
+    --col-9: calc(100% / 12 * 9);
+    --col-10: calc(100% / 12 * 10);
+    --col-11: calc(100% / 12 * 11);
+    --col-12: calc(100% / 12 * 12);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: var(--ff);
+    border: none;
+    list-style: none;
+}
+body{
+    background: var(--dark);
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col-4{
+    width: var(--col-4);
+    padding: 0 15px;
+}
+.col-12{
+    width: var(--col-12);
+    padding: 0 15px;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.align-items-start{
+    align-items: flex-start;
+}
+.text-center{
+    text-align: center;
+}
+/* start header */
+header{
+    background: url(../images/bg_img.png) no-repeat center center / cover;
+    width: 100%;
+    height: 770px;
+}
+.logo{
+    background: var(--c-green2);
+    padding: 11px 22px;
+    color: var(--c-white);
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 3px solid var(--c-bggreen);
+    line-height: 18px;
+    font-weight: var(--bold);
+    font-size: 24px;
+}
+header nav a{
+    color: var(--c-green);
+    font-size: 20px;
+    padding: 37px 25px 29px 25px;
+    font-weight: var(--regular);
+    display: flex;  
+}
+header nav ul li a.activ{
+    color: var(--c-white);
+    background: var(--c-green);
+    padding: 37px 11px 29px 11px;
+}
+.activ span{
+    width: 24px;
+    height: 24px;
+    background: var(--c-white);
+    color: var(--c-green2);
+    display: block;
+    text-align: center;
+    border-radius: 50%; 
+    margin-left: 7px;   
+}
+header h1{
+    color: var(--c-green);
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: var(--bold);
+    margin-top: 150px;
+}
+header p:first-of-type{
+    color: var(--c-green);
+    font-size: 36px;
+    font-weight: var(--bold);
+}
+header p:nth-of-type(2){
+    color: var(--c-white2);
+    font-size: 18px;
+    line-height: 25px;
+    margin: 30px 0px 70px;
+}
+.header_price{
+    color: var(--c-white);
+    background-color: var(--c-green2);
+    padding: 28px 90px;
+    font-size: 60px;
+    font-weight: var(--thin);
+}
+.display-f{
+    display: flex;
+}
+/* end header */
+/* start main */
+main ul{
+    margin: 50px 0 69px !important;
+}
+main .active{
+    color: var(--c-gren-main);
+}
+main a{
+    color: var(--c-gray);
+    transition: .5s;
+    font-size: 20px;
+}
+main li{
+    margin-right: 62px;
+    font-weight: var(--bold);
+}
+main a:focus,
+main a:hover{
+    color: var(--c-gren-main);
+}
+main section .section_img{
+    width: 100%;
+    position: relative;
+    height: 350px;
+}
+main section .section_img img{
+    width: 100%;
+    height: 100%;
+}
+main section .section_img .price span{
+    color: var(--c-white2);
+    background: var(--c-green);
+    padding: 20px 60px;
+    display: block;
+    font-weight: var(--regular);
+    font-size: 24px;
+    line-height: 24px;
+}
+main section .section_img .price{
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}
+main h2{
+    color: var(--c-green);
+    font-size: 24px;
+}
+main p{
+    color: var(--c-white2);
+}
+main section .section_img .btn{
+    width: 100%;
+    height: 100%;
+    background-color: var(--hover);
+    border: none;
+    color: var(--white);
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .7s;
+}
+main section .section_img:hover .btn
+{
+    opacity: 1;
+}
+main section .section_img:hover .price{
+    opacity: 0;
+}
+.main_img-bg{
+    background: url(../images/section_bg\ \(1\).png) no-repeat center center / cover;
+    width: 100%;
+    height: 559px;
+}
+.main_img-bg h1{
+    color: var(--c-green);
+    font-size: 36px;
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 40px;
+}
+.main_img-bg h1::after{
+    top: 120px;
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: var(--c-green);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.main_img-bg p{
+    font-family: var(--ff);
+    font-weight: var(--regular);
+    line-height: 24px;
+    font-size: 18px;
+    padding: 0px 165px;
+}
+.map_title{
+    background-color: var(--white);
+    width: 100%;
+
+}
+.map_title h1{
+    padding: 49px;
+    font-size: 36px;
+    font-family: var(--ff-t);
+    color: var(--c-green);
+}
+main .col-12{
+    padding: 0px;
+}
+/* end main */
+
+/* footer start */
+
+    footer{
+        padding-top: 50px;
+    }
+    .phone{
+        font-size: 24px;
+        font-family: var(--ff-roboto);
+        font-weight: var(--bold);
+        color: var(--c-green2);
+    }
+    .footer_menu ul{
+        justify-content: center;
+        padding: 3rem 0;
+    }
+    .footer_menu ul li,
+    .footer_menu ul li a{
+        padding: 0 15px;
+        color: var(--c-white);
+        font-family: var(--ff-t);
+        font-size: 18px;
+    }
+    footer p{
+        text-align: center;
+        color: var(--c-white);
+        font-family: var(--ff-t);
+        font-weight: var(--thin);
+    }
+
+/* end footer */
